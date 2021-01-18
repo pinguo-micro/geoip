@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/abh/geoip"
+	"github.com/pinguo-micro/geoip"
 )
 
 func main() {
@@ -38,8 +37,8 @@ func main() {
 	}
 
 	if gi != nil {
-		test4(*gi, "207.171.7.51")
-		test4(*gi, "127.0.0.1")
+		test4(gi, "207.171.7.51")
+		test4(gi, "127.0.0.1")
 	}
 	if gi6 != nil {
 		ip := "2607:f238:2::5"

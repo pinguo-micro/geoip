@@ -58,11 +58,12 @@ func Open(files ...string) (*GeoIP, error) {
 func OpenDb(files []string, flag int) (*GeoIP, error) {
 	if len(files) == 0 {
 		files = []string{
-			"/usr/share/GeoIP/GeoIP.dat",       // Linux default
-			"/usr/share/local/GeoIP/GeoIP.dat", // source install?
-			"/usr/local/share/GeoIP/GeoIP.dat", // FreeBSD
-			"/opt/local/share/GeoIP/GeoIP.dat", // MacPorts
-			"/usr/share/GeoIP/GeoIP.dat",       // ArchLinux
+			"/usr/share/GeoIP/GeoIP.dat",                              // Linux default
+			"/usr/share/local/GeoIP/GeoIP.dat",                        // source install?
+			"/usr/local/share/GeoIP/GeoIP.dat",                        // FreeBSD
+			"/opt/local/share/GeoIP/GeoIP.dat",                        // MacPorts
+			"/usr/share/GeoIP/GeoIP.dat",                              // ArchLinux
+			"/Users/pinguokeji/wwwroot/micro/geoip/test-db/GeoIP.dat", // test
 		}
 	}
 
