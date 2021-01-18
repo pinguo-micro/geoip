@@ -1,5 +1,11 @@
 # GeoIP API for Go
 
+libGeoIP is required
+
+```json
+brew install libGeoIP
+```
+
 This package wraps the [libgeoip C library](http://www.maxmind.com/app/c) for
 access from Go (golang). [![Build Status](https://travis-ci.org/abh/geoip.png?branch=master)](https://travis-ci.org/abh/geoip)
 
